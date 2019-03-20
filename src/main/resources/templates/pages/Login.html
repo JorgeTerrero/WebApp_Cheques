@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="es">
+
+<head>
+    <title>Loggin Page</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <p>AQUI IRA EL FORMULARIO DE LOG IN PARA INGRESAR, POR EL MOMENTO SOLO HAY BOTONES QUE INMEDIATAMENTE ENVIAN HACIA
+        LA VENTANA CORRESPONDIENTE </p>
+
+    <form th:action="@{/LoginForm}" method="POST">
+        <select name="LoginForm">
+            <option>Administrador</option>
+            <option>Standar</option>
+        </select>
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>
